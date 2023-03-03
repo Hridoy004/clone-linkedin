@@ -1,0 +1,42 @@
+.primary-navbar {
+  .nav-container {
+    padding: 24px;
+    max-width: 1128px;
+    margin: auto;
+
+    .logo img{
+      width: 135px;
+      height: 35px;
+    }
+
+    .divider {
+      width: 1px;
+      height: 32px;
+      background-color: gray;
+      opacity: 0.5;
+      margin-right: 8px !important;
+    }
+
+    .menu-item {
+      color: black;
+      p { margin: 0 !important; }
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+  }
+}
+
+.sign-in-custom {
+  border: 1px solid #7985cb;
+  border-radius: 24px;
+  font-weight: bold;
+
+  &:hover {
+    border: 2px solid #7985cb;
+  }
+
+}
