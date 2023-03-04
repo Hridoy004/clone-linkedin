@@ -1,0 +1,100 @@
+@mixin max-960 {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin max-420 {
+  @media (max-width: 420px) {
+    @content;
+  }
+}
+
+@mixin gt-xs-max-960 {
+  @media (min-width: 421px) and (max-width: 960px) {
+    @content;
+  }
+}
+
+.welcome-wrapper {
+
+  .welcome-container {
+    padding: 24px;
+    max-width: 1128px;
+    margin: auto;
+
+    .welcome-header {
+
+      .welcome-title {
+        font-weight: 200;
+        font-size: 44px;
+        color: #8f5849;
+
+        @include max-420 {
+          font-size: 20px !important;
+        }
+
+        @include gt-xs-max-960 {
+          font-size: 32px !important;
+        }
+      }
+    }
+
+    .welcome-image {
+      @include max-960 {
+        margin-top: 32px;
+      }
+
+      img {
+        @include max-960 {
+          width: 300px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.landing-page-form {
+  width: 70%;
+
+  @include max-960 {
+    width: 100%;
+  }
+}
+
+.forgot-password {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+  }
+}
+
+
+.sign-in-button {
+  width: 70%;
+  color: white;
+  background-color: #0a66c2;
+  padding: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 20px;
+
+  &:hover {
+    background-color: #07539f;
+  }
+
+  @include max-960 {
+    width: 100% !important;
+  }
+}
+
+.sign-in-with-google {
+
+}

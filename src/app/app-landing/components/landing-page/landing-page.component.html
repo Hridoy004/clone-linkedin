@@ -1,2 +1,39 @@
 <app-nav-bar></app-nav-bar>
 
+<section class="welcome-wrapper">
+
+  <section class="welcome-container" fxLayout="row" fxLayout.lt-md="column">
+
+    <section class="welcome-header" fxFlex.lt-lg="55">
+      <p class="welcome-title">Welcome to your professional community</p>
+
+      <form class="landing-page-form full-width">
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Email or phone number</mat-label>
+          <input type="email" matInput>
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input type="password" matInput>
+        </mat-form-field>
+      </form>
+
+      <p>
+        <a class="forgot-password" href="#">Forgot password?</a>
+      </p>
+
+      <button class="sign-in-button">Sign In</button>
+
+    </section>
+
+    <!--<section class="welcome-image" fxFlex="45" *ngIf="mediaObserver.isActive('md') || mediaObserver.isActive('gt-md')">
+      <img src="assets/img/header-bg.svg">
+    </section>-->
+
+    <section class="welcome-image" fxFlex="45" >
+      <img src="assets/img/header-bg.svg">
+    </section>
+
+  </section>
+
+</section>
